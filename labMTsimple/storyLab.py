@@ -146,6 +146,7 @@ def emotion(tmpStr,someDict,scoreIndex=1,shift=False,happsList=[]):
         tmpStr = tmpStr.replace(replaceString,' ')
   words = [x.lower() for x in re.findall(r"[\w\@\#\'\&\]\*\-\/\[\=\;]+",tmpStr,flags=re.UNICODE)]
 
+
   # only use the if shifting
   if shift:
     for word in words:
